@@ -1,15 +1,14 @@
 Package.describe({
   name: 'qualia:profile',
-  version: '0.0.1',
+  version: '0.0.5',
   summary: 'Profile the Meteor build process, server startup, and server runtime.',
   git: 'http://github.com/qualialabs/profile',
   documentation: 'README.md'
 });
 
-if (process.env.QUALIA_PROFILE_FOLDER) {
+if (process.env.QUALIA_PROFILE_FOLDER || process.argv.slice(-1)[0] === 'publish') {
   Package.registerBuildPlugin({
     name: "qualia:profile",
-    use: [],
     sources: [
       'profile.js',
       'plugin.js',
@@ -30,7 +29,7 @@ Package.onUse(function(api) {
   api.use([
     'ecmascript',
     'underscore',
-  ]);
+  ], [ 'server' ]);
 
-  api.mainModule('main.js');
+  api.mainModule('main.js', 'server');
 });
