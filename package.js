@@ -1,6 +1,6 @@
 Package.describe({
   name: 'qualia:profile',
-  version: '0.0.5',
+  version: '0.0.8',
   summary: 'Profile the Meteor build process, server startup, and server runtime.',
   git: 'http://github.com/qualialabs/profile',
   documentation: 'README.md'
