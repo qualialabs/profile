@@ -1,4 +1,4 @@
-# Profile
+# Meteor CPU Profiler
 
 This package makes it easy to record proper sampling [CPU profiles](https://github.com/node-inspector/v8-profiler) of Meteor on the server. You can open the profile in Chrome for detailed analysis. A CPU profile looks like this in Chrome:
 
