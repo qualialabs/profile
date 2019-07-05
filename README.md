@@ -2,7 +2,7 @@
 
 This package makes it easy to record proper sampling [CPU profiles](https://github.com/node-inspector/v8-profiler) of Meteor on the server. You can open the profile in Chrome for detailed analysis. A CPU profile looks like this in Chrome:
 
-![example flamechart](https://cdn.pbrd.co/images/HhIkDVZ.png)
+![example flamechart](https://user-images.githubusercontent.com/247408/60747657-a0bae300-9f3b-11e9-8dc3-b615a2611aca.png)
 
 This package supports profiling both the Meteor build process and the Meteor server process.
 
