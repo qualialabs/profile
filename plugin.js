@@ -9,7 +9,7 @@ if (process.env.QUALIA_PROFILE_FOLDER) {
       },
       AppRunner   = require('./runners/run-app.js').AppRunner,
       Bundler     = require('./isobuild/bundler.js'),
-      v8Profiler  = Npm.require('v8-profiler-node8'),
+      v8Profiler  = Npm.require('v8-profiler-next'),
       Profiler    = getProfiler(v8Profiler, fs)
   ;
 
@@ -51,7 +51,7 @@ if (process.env.QUALIA_PROFILE_FOLDER) {
       "process.chdir(require('path').join(__dirname, 'programs', 'server'));",
       "",
       "var npmRequire = require('./programs/server/npm-require.js').require;",
-      "var profilerPath = '/node_modules/meteor/qualia:profile/node_modules/v8-profiler-node8';",
+      "var profilerPath = '/node_modules/meteor/qualia:profile/node_modules/v8-profiler-next';",
       "var v8Profiler = npmRequire(profilerPath);",
       "var fs = require('fs');",
       'var Profiler = eval(`(' + getProfiler.toString() + ')`)(v8Profiler, fs);',
