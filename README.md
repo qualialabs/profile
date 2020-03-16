@@ -12,6 +12,8 @@ This package supports profiling both the Meteor build process and the Meteor ser
 $ meteor add qualia:profile
 ```
 
+As of version `1.0.0`, this package is only compatible with Meteor `1.8.2` or newer. If you are using an older version of Meteor you should stick with version `0.0.13`.
+
 ## Usage
 
 There are two uses of `qualia:profile`. The first is for profiling Meteor build and reload performance. The second is for profiling Meteor runtime performance.
