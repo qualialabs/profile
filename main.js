@@ -1,7 +1,7 @@
 import './profile.js';
 import fs from 'fs';
 
-let v8Profiler = Npm.require('v8-profiler-node8'),
+let v8Profiler = Npm.require('v8-profiler-next'),
     { startProfile, stopProfile } = getProfiler(v8Profiler, fs),
     profileDuration = (profileName, exportPath, duration) => {
       startProfile(profileName, { exportPath });
